@@ -1,0 +1,46 @@
+{
+  "name": "codex-ai-native-sdlc",
+  "version": "0.1.0",
+  "description": "Artifact-driven AI-native SDLC skill for OpenAI Codex",
+  "type": "module",
+  "bin": {
+    "codex-ai-native-sdlc": "bin/install.js"
+  },
+  "files": [
+    "SKILL.md",
+    "README.md",
+    "LICENSE",
+    "agents",
+    "assets",
+    "references",
+    "scripts",
+    "bin"
+  ],
+  "scripts": {
+    "test": "node bin/install.js check",
+    "prepublishOnly": "node bin/install.js check"
+  },
+  "keywords": [
+    "codex",
+    "openai",
+    "skill",
+    "sdlc",
+    "ai-native",
+    "spec-driven-development"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Accepted0424/ai-native-sdlc.git"
+  },
+  "homepage": "https://github.com/Accepted0424/ai-native-sdlc#readme",
+  "bugs": {
+    "url": "https://github.com/Accepted0424/ai-native-sdlc/issues"
+  },
+  "license": "MIT"
+}
