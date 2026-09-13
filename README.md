@@ -4,6 +4,20 @@
 
 它把一次软件变更组织为可追踪的产物链，让 Codex 负责整理、实现、验证和准备发布，让人负责需求、方案、风险和生产发布决策。
 
+## 快速安装
+
+复制下面这条命令即可安装最新版 Skill：
+
+```bash
+npx --yes codex-ai-native-sdlc@latest install
+```
+
+安装完成后，在目标项目的 Codex 任务中输入：
+
+```text
+$ai-native-sdlc 管理这次软件变更
+```
+
 ```text
 intent → spec → plan → build → test → review → deploy → complete
    ↑                                                          │
@@ -29,7 +43,7 @@ intent → spec → plan → build → test → review → deploy → complete
 npm 包只负责把 Skill 安装到 Codex，不会把日常开发流程变成 CLI：
 
 ```bash
-npx codex-ai-native-sdlc install
+npx --yes codex-ai-native-sdlc@latest install
 ```
 
 安装完成后，仍然通过 Codex 对话使用：
@@ -41,7 +55,7 @@ $ai-native-sdlc 管理这次软件变更
 覆盖已有版本时，安装器会先生成可恢复备份：
 
 ```bash
-npx codex-ai-native-sdlc install --force
+npx --yes codex-ai-native-sdlc@latest install --force
 ```
 
 ### 手动安装
